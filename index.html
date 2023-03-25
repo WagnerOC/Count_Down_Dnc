@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Count Down</title>
+  <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+  <header>
+    <img width="100" src="./imgs/dnc_logo.png" alt="Logotipo DNC">
+    <h1>Count Down</h1>
+  </header>
+
+  <div class="timer">
+    <div>
+      <h1 id='dia'>00</h1>
+      <p>Dias</p>
+    </div>
+    <div>
+      <h1 id="hora">00</h1>
+      <p>Horas</p>
+    </div>
+    <div>
+      <h1 id="minuto">00</h1>
+      <p>Minutos</p>
+    </div>
+
+    <div>
+      <h1 id="segundo">00</h1>
+      <p>Segundos</p>
+    </div>
+  </div>
+
+  <script src="./scripts/script.js">
+
+      const dia = document.getElementById('dia')
+      const hora = document.getElementById('hora')
+      const minuto = document.getElementById('minuto')
+      const segundo = document.getElementById('segundo')
+
+      lancamento = '17 oct 2023'
+
+      function countDown(){
+        const dataLancamento = new Date(lancamento)
+        const hoje = new Date()
+
+        const segTotal = (dataLancamento - hoje) / 1000;
+
+        const finalDias = segTotal / 60 / 60 / 24
+      }
+
+  
+  </script>
+
+</body>
+</html>
